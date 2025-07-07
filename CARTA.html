@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Feliz Cumpleaños Kelly ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: 'Indie Flower', cursive;
+      background: #cca7fd;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h4 {
+      font-family: 'Amatic SC', cursive;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .text-right {
+      text-align: right;
+    }
+
+    /* Caja principal de la tarjeta */
+    .card {
+      width: 400px;
+      height: 600px;
+      position: relative;
+      background: #e0e1dc;
+      border-radius: 8px;
+      box-shadow: 20px 20px 60px rgba(0,0,0,0.3);
+      overflow: hidden;
+      perspective: 1200px;
+    }
+
+    /* Contenido interior */
+    .inner {
+      width: 100%;
+      height: 100%;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      color: #013243;
+      overflow-y: auto;
+    }
+
+    .inner p {
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+
+    /* Portada que se abre */
+    .cover {
+      width: 100%;
+      height: 100%;
+      background: white;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform-origin: left;
+      transform: rotateY(0deg);
+      transition: transform 1s ease;
+      z-index: 2;
+      border-radius: 8px 0 0 8px;
+      box-shadow: 10px 0 30px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    .cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Efecto de apertura al pasar el mouse */
+    .card:hover .cover {
+      transform: rotateY(-130deg);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="cover">
+      <img src="k.jpeg" alt="Kelly y Javier">
+    </div>
+    <div class="inner">
+      <h4 class="color3">FELIZ CUMPLEAÑOS KELLY ❤️</h4>
+      <p>Hoy es un día súper especial y no podía dejar pasar la oportunidad de escribirte unas palabras. Primero que nada... ¡Feliz cumpleaños! 🥳</p>
+      <p>Gracias por ser esa persona tan linda, divertida y única que siempre tiene algo bueno que compartir. Tu forma de ser, tu energía y tu amistad son un regalo para todos los que tenemos la suerte de conocerte. En lo personal, me siento muy afortunado por tenerte en mi vida. ❤️</p>
+      <p>Ojalá este nuevo año para ti esté lleno de experiencias increíbles, personas que te sumen, y metas que te hagan sentir orgullosa de ti misma.</p>
+      <p>Gracias por todos los momentos que hemos compartido, por las pláticas que se vuelven eternas, por escucharme cuando lo necesito y por simplemente ser tú.</p>
+      <p>Te quiero muchísimo Kelly, y deseo con todo mi corazón que este cumpleaños sea solo el comienzo de algo aún más bonito para ti.</p>
+      <p>Disfruta tu día al máximo, haz lo que te haga feliz, rodéate de gente que te quiera bien, y recuerda siempre lo valiosa que eres.</p>
+      <p>¡Te mando un abrazo gigante, muchos besos y mis mejores deseos hoy y siempre!</p>
+      <p>Con mucho cariño,</p>
+      <p>Javierpucha ❤️</p>
+    </div>
+  </div>
+
+</body>
+</html>
